@@ -8,7 +8,7 @@ ms = ['BEL','BGR','DNK','DEU','EST','FIN','FRA','GBR','GRC','IRL','ITA','HRV','L
 ms.sort()
 
 # dkor paths
-directory_name = "./DKOR/DKORs_clean"
+directory_name = "./DKORs_clean"
 directory = os.fsencode(directory_name)
 dkor_list = []
     

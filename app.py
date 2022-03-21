@@ -44,7 +44,7 @@ ms.sort()
 ms_dict = {'BEL': 'Belgium','BGR': 'Bulgaria','DNK': 'Denmark','DEU': 'Germany','EST': 'Estonia','FIN': 'Finland','FRA': 'France','GBR': 'Great Britain','GRC': 'Greece','IRL': 'Ireland','ITA': 'Italy','HRV': 'Croatia','LAT': 'Latvia','LTU': 'Lithuania','LUX': 'Luxembourg','MLT': 'Malta','NLD': 'The Netherlands','AUT': 'Austria','POL': 'Poland','PRT': 'Portugal','ROU': 'Romania','SWE': 'Sweden','SVK': 'Slovakia','SVN': 'Slovenia','ESP': 'Spain','CZE': 'Czech Republic','HUN': 'Hungary','CYP': 'Cyprus'}
 
 # dkor paths
-directory_name = "./DKOR/DKORs_clean"
+directory_name = "./DKORs_clean"
 directory = os.fsencode(directory_name)
 dkor_list = []
     
