@@ -513,7 +513,7 @@ def refresh(n, elements, graph_tapNode, dominating_set_n, spanning_tree_button_n
 
     elif spanning_tree_button_n > spanning_tree_button_n_clicks_count:
         spanning_tree = list(tree.maximum_spanning_edges(nx_graph, algorithm="kruskal", data=False))
-        print(spanning_tree)
+        #print(spanning_tree)
 
         for e in elements:
             for edge in spanning_tree:
