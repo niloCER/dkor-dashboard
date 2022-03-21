@@ -1,0 +1,105 @@
+I. Zusammenfassung
+- EU-US Justiz/Inneres Ministertreffen:
+KOM berichtete, dass bei dem Treffen am 1.4, Juni in Dublin das US-Programm PRISM eine zentrale Rolle eingenommen habe. DEU, GBR und SWE baten um Berücksichtigung eigener Experten in der neuen EU-us Expertengruppe für Sicherheit und Datenschutz. Weitere Themen waren das Datenschutzabkommen, Migration, Terrorismusbekämpfung und Cyberkrimminalität.
+
+- EU-US Luftfahrtsausschuss:
+Schwerpunkte der Sitzung am 5. Juni in Island waren die Kooperation vor der kommenden ICA0-Sitzung im Herbst u.a. in Bezug auf Emissionshandel, das Freihandelsabkommen mit d en USA (Kabotagevorschriften), diskriminierende Landegebühren in ITA und Budgetkürzungen in den USA,
+
+- Freihandelsabkommen USA (TTIP):
+Zur Substanz der KOM-Positionspapiere im Vorfeld der ersten Verhandlungsrunde  ab dem 8. Juli in Washington verwies KOM auf das parallele Expertentreffen.  Weitere Diskussionsthemen waren divergieren de Zahlen in Studien zu den Potentialen von TTIP (zuletzt Bertelsmann-Studie) und Transparenz der Verhandlungen.
+
+- Freihandelsabkommen CAN (CETA):
+KOM berichtete, dass es in den Gesprächen während des G8-Gipfels keinen Durchbruch gegeben habe. Trotz pragmatischer Herangehensweise der EU zeige CAN weiterhin nicht die erforderliche Flexibilität bei den zentralen drei ausstehenden Fragen : Finanzdienstleistungen/Investitionen, öff. Beschaffungswesen u nd Agrarmarktzugang.
+
+- COTRA-Arbeitsprogramm:
+Vors. setzte Frist für Kommentare auf Donnerstag,27. Juni, mittag.
+
+II. Ergänzend und im Einzelnen
+
+1. EU-US Justiz/Inneres Ministertreffen am 14. Juni in Dublin
+
+KOM berichtete auf Basis von Dokument 3.0774lL3. Ergänzend wurden folgende Bereiche hervorgehoben :
+
+a) Justiz
+
+KOM erklärte, dass der Fokus eigentlich auf Opferrechten habe liegen sollen; die US-Datenausspähung  aber alle Diskussionen überlagert habe. Die EU habe Aufklärung über den Umfang der Programme gefordert und unterstrichen, dass fundamentale Grundrechte nicht angetastet werden dürften. VP Reding habe ergänzend in einem Brief an US-Generalstaatsanwalt Holder um weitere Details gebeten.
+
+Die U§R hätten in ersten Stellungnahmen zwischen den Programmen Verizon und PRISM unterschieden.
+
+Bei Verizon gehe es um die Überwachung von Telephonanrufen (Anrufdauer, gewählte Nummern) bezogen auf US-Bürger. Erfasst seien allerdings auch Anrufe aus den USA in Drittstaaten und umgekehrt. Die Daten könnten nur bei begründetem Verdacht terroristischer Tätigkeiten herangezogen werden. Bei PRISM sei der Anwendungsbereich  nicht auf US-Bürger begrenzt. Voraussetzung  seien begründete Verdachtsmomente  auf Basis einer vorherigen gerichtlichen Ermächtigung. US-seitig sei es bislang nicht möglich gewesen, Angaben über die Anzahl betroffener EU-Bürger zu machen.
+
+Mit den Jl-Experten der MS sei die Zusammensetzung  der geplanten neuen EU-US Expertengruppe zu PRISM am 24. Juni im Detail besprochen worden. Der EAD hob in diesem Kontext die hohe Bedeutung des Datenschutzes für die EU hervor, wichtig sei es, mit den USA die richtige Balance zu finden.
+
+Beim Datenschutzabkommen mit den USA habe die EU Fortschritte beim Rechtsschutz auch bzgl. Verwaltungsrechtsbehelfen  gemacht. Die Restriktionen zum Zugang zu Daten sollten explizit im Abkommen genannt und nicht den nationalen Gesetzgebungen vorbehalten werden (ursprüngl. Forderung der USA]. Entsprechende Individualforderungen könnten zentral vor den Datenschutzbeauftragten  (nationale Kontaktpunkte) geltend gemacht werden, um den Bürger vor verwirren den Zuständigkeitsregelungen zu schützen, Streitig seien allerdings weiterhin u.a. die Datenvorratshaltung, Zweckbindung der Datennutzung (purpose limitation) und rechtliche Gleichstellung von US- und EU-Bürgern,
+
+Weitere justitielle Themen des Ministertreffens seien Rechtshilfeabkommen (potentielle Ausweitung der bislang gut funktionierenden Abkommen), Opferrechte (best practices der USA bspw. "Opfenwoche", Violence against Women Act) und das sog. "Judgement Projekt" (Haager Konvention) gewesen.
+
+b) Inneres:
+
+KOM hob drei Punkte hervor:
+
+-Migration (potentielle Erstreckung des Visa Waiver Programms auf POL; Kritik der USA am geplanten Reziprozitätsprinzip in den EU-Visaregelungen, das Freihandelsabkommen mit den USA (TTIP) als potentielles Gesprächsforum für Migrationsfragen, ohne dort inhaltliche Regelungen anzustreben)
+
+-Terrorismusbekämpfung (Foreign Fighters) und
+
+-Cyberkriminalität. Beide Seiten hätten bei Cyberkriminatität die Arbeit der bereits existierenden Arbeitsgruppe und die globale Allianz gegen Kinderpornographie  positiv gewürdigt. Ein Fortschrittsbericht hierzu von KOM werde in der zweiten Jahreshälfte 2013 vorgestellt.
+
+c) Aussprache der MS:
+
+Bezüglich der PRlSM-Expertengruppe kündigten DEU, GBR, SWE Interesse an einerTeilnahme an. GBR betonte allerdings, dass MS-Kompetenzen betroffen seien und deshalb die Arbeit der Gruppe auf Datenschutz und Rechtedurchsetzung begrenzt werden müsse. DEU und FRA baten um Klärung der Verbindung zu den Datenschutzverhandlungen  mit den USA. KOM erklärte, dass die Rolle der PRISM-Expertegruppe in der Aufdeckung von Fakten liege. Zu weiteren Details wurde auf das Treffen der Jl-Experten verwiesen
+
+Zum EU-US Datenschutzabkommen fragte DEU nach Fortschritten u.a. bei der Datenspeicherung, individuellem gerichtlichen Rechtsschutz und Zugang zu Daten in den USA (Twitter, Yahoo). Auch wenn besehende Abkommen nicht infrage gestellt werden sollten müssten doch allgemeine Regelungen des neuen Rahmenabkommens auch auf die Datenübermittlung auf Basis älterer Vereinbarungen anwendbar sein. KOM verwies auf den schriftlichen Bericht und erklärte, dass noch keine weiteren Verhandlungsrunden  mit den USA angesetzt worden seien; aber versucht werde, die Sitzungsfrequenz zu steigern.
+
+2. EU-US Luftfahrtsausschuss (Island, 5. Juni)
+
+KOM informierte, dass die halbjährlichen Treffen des Ausschusses der Implementierung des gemeinsamen Luftfahrtsabkommens und der Diskussion von Wirtschaftsbelangen  dienten. Die kommenden Treffen seien für Januar 2014 in Washington und Juni 2014 in Wien vorgesehen.
+
+Schwerpunkt der Diskussion in Island waren:
+
+-die Kooperation vor der kommenden  ICAO-Sitzung im Herbst auch in Bezug auf Emissionshandel,
+
+-das Freihandelsabkommen  mit den USA (TTtP),
+
+-diskriminierende Lande- und Luftfahrtsnavigationsgebühren in ITA (derzeit läuft EU-Vertragsverletzungsverfahren gegen ITA) und
+
+-die Budgetkürzungen in den USA mit der Folge langer Wartezeiten für Immigration und Sicherheitsverfahren  a n US-Flughäfen (wirtschaftlich negative Folgen wegen Startverboten bei zu langen Wartezeiten für EU-crews, diskriminierendes US-Abkommen mit Abu Dhabi).
+
+ITA verwies auf bilaterale Kontakte mit den USA in Rom. Es werde angestrebt, die diskriminierenden Gebühren bis Januar 2014 abzuschaffen.
+
+Auf Nachfrage von DEU nach den Diskussionen zu TTIP erklärte KOM, dass die EU-Erwartungen in Bezug auf Eigentums- und Kontrollerwerb und Kabotage vorgetragen worden seien. Die USA hätten allerdings nicht in der Substanz reagiert und täglich auf die - zu diesem Zeitpunkt noch laufende-Konsultationsfrist  des Kongresses verwiesen.
+
+3. Freihandelsabkommen USA (TTIP- Transatlantic Trade and Investment Partnership)
+
+KOM verwies auf die in den vergangenen Tagen verteilten Positionspapiere im Vorfeld der ersten Verhandlungsrunde  in der Woche des 8. Juli in Washington. Diese würden im Detail in einer Expertensitzung am 25. Juni behandelt. Basis sei das am 14. Juni beim RfAB/Handel beschlossene Mandat.
+
+Transparenz bleibe eine Herausforderung, da die Verhandlungstexte  zumindest zu Beginn der Gespräche vertraulich bleiben müssten. Spätere Veröffentlichungen müssten noch im einzelnen erwogen werden.
+
+In Bezug auf Studien gebe es derzeit ein differenziertes  Bild. U.a. die letzte Studie der Bertelsmann-Stiftung  habe zu Nachfragen der Presse über unterschiedliche Zahlen verschiedener Studien zu potentiellen Gewinnen für EU und USA (BlP-/Exportsteigerungen)  geführt. Hintergrund seien zum einen unterschiedliche  Modelle zum Abbau nichttarifärer Handelshemmnisse, zum anderen Vergleiche von relativen und absoluten Exportsteigerungen
+
+EAD kündigte Hintergrundpapiere  für EU-Delegationen  an, um Drittstaatenreaktionen begegnen zu können. Ergänzend wurde auf die umfangreichen Informationen auf der Webseite von GD Handel verwiesen. KOM bot zudem einen Abgleich von Kommunikationsstrategien an.
+
+Ein Datum für einen Gipfel mit den usA in 2013 gibt es noch nicht.
+
+DEU, NLD, FRA und GBR baten um enge Einbindung der MS in den Verhandlungsprozess.  SWE fragte nach einer Sprachregelung zu TUR. KOM erwiderte, dass bislang keine formalisierten Sprechpunkte zu TUR geplant seien, KoM stehe aber jederzeit für bilaterale Unterstützung  bereit.
+
+4. Freihandelsabkommen CAN (CETA - Comprehensive Economic and Trade Agreement):
+
+KOM berichtete, dass es in den Gesprächen während des G8-Gipfels keinen Durchbruch gegeben habe. Trotz pragmatischer Herangehensweise der EU zeige CAN weiterhin nicht die erforderliche Flexibilität bei den zentralen drei ausstehen den Fragen : Finanzdienstleistungen/Investitionen, öff. Beschaffungswesen und Agrarmarktzugang. CAN-Chefverhandler habe sich zuletzt 4 Wochen in Brüssel aufgehalten, allerdings ohne greifbare Fortschritte.
+
+Es gebe noch keinen festen Verhandlungszeitrahmen für die kommenden Wochen. Geplant sei jedoch ein Kontakt der Chefverhändler noch vor der Sommerpause. PM Harper habe allerdings deutlich gemacht, dass er sich höchstpersönlich das grüne Licht für einen Abschluss von CETA vorbehallte.
+
+DEU unterstrich sorgen in Bezug auf Investitionsschutz und das sog. "Autopaket". Zudem wurde um Debriefing über die Videokonferenz  mit CAN zum politischen Rahmenabkommen in der kommenden RAG coTRA gebeten, NLD, FRA betonten, dass in Bezug auf GETA Inhalt vor Zeit gehe. GBR hingegen erklärte, dass ein Abschluss dringend geboten sei und auch die EU weitere Zugeständnisse machen müsse.
+
+EAD sagte ein Debriefing über die kommende Videokonferenz mit CAN am 27. Juni sowie die Übermittlung des aktualisierten Textes des Rahmenabkommens für die nächste Sitzung von COTRA zu.
+
+5. Sonstiges
+
+-Auf Frage von SWE erklärte EAD, dass es noch keinen Termin für die nächste Hauptstadt-COTRA gebe.
+
+-GBR informierte über das Treffen von cameron mit pM Harper am 12. Juni. Themen seien die G8-Agenda und aktuelle außenpolitische Entwicklungen gewesen.
+
+-Der EAD informierte über Forschungsgelder  in Höhe von 2,5 Mio. EUR für Politikforschung rund um TTIP. US-Think Tanks und Forschungseinrichtungen müssten sich dafür mit einem EU-Partner zusammen tun. Weitere Informationen gebe es in Kürze auf der Webseite der EU-Delegation  in Washington.
+
+-C0TRA-Arbeitsprogramm:  Vors. setzte Frist für Kommentare auf Donnerstag, 27. Juni, mittag. sollten diese ausbleiben, werde lediglich der Kalender aktualisiert, das Programm ansonsten aber beibehalten.
+
+Nächste RAG COTRA am 16. Juli.
