@@ -160,8 +160,10 @@ def build_graph(directory_name,dkor_list):
 
     return dkor_graph.dkor_graph_dict_preloaded(directory_name,dkor_list)
 
+external_stylesheets=[dbc.themes.SUPERHERO]
+
 app = dash.Dash(
-    external_stylesheets=[dbc.themes.SUPERHERO]
+    external_stylesheets=external_stylesheets
 )
 
 
