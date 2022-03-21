@@ -408,7 +408,7 @@ app.layout = html.Div([
     dbc.Row([
             html.Footer(
             children='Footer',
-            style={'height': '100%', 'vertical-align': 'middle', 'text-align': 'right'}
+            style={'height': '100%', 'vertical-align': 'middle', 'text-align': 'right', 'margin-top': 5}
             ),
     ],style= {'background-color': '#2c3f53', 'border-style': 'solid', 'border-width': '1px', 'border-color': '#445462', 'height': 35, 'vertical-align': 'middle'}),
 
