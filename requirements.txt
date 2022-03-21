@@ -8,6 +8,7 @@ cymem==2.0.6
 dash==2.3.0
 dash-bootstrap-components==1.0.3
 dash-core-components==2.0.0
+dash-cytoscape==0.3.0
 dash-html-components==2.0.0
 dash-table==5.0.0
 Flask==2.0.3
