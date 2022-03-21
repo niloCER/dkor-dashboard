@@ -163,7 +163,10 @@ def build_graph(directory_name,dkor_list):
 external_stylesheets=[dbc.themes.SUPERHERO]
 
 app = dash.Dash(
-    external_stylesheets=external_stylesheets
+    external_stylesheets=external_stylesheets,
+    meta_tags=[
+        {"name": "viewport", "content": "width=device-width, initial-scale=1"},
+    ],
 )
 
 
@@ -177,15 +180,15 @@ app.layout = html.Div([
     html.Div([
         dbc.Row([
             html.H1(
-            children='Master Thesis',
+            children='DKOR Dashboard',
             style={'margin-top': 20, 'margin-left': 10}
             ),
         ]),
 
         dbc.Row([
             html.H6(
-                children='Dash: A web application framework for your data.',
-                style={'margin-left': 10}
+                children='Master Thesis: How can diplomatic cables be used to map negotiation dynamics in the European Council? ',
+                style={'margin-left': 13, 'font-size': '18px'}
             )
         ]),
     ], style={'background-color': '#0b69aa', 'margin-bottom': "5px"}),
@@ -238,7 +241,7 @@ app.layout = html.Div([
 
                 ],style={"height": "100%", "background-color": "#2c3f53", 'border-style': 'solid', 'border-width': '1px', 'border-color': '#445462'}), 
             ],style={"height": "50%", "padding": 5})
-        ],width={"size": 3}, style={"height": '650px'}),
+        ],width={"size": 3}, xs=12, md=3,  style={"height": '650px'}),
 
         dbc.Col([
             html.Div([
@@ -288,7 +291,7 @@ app.layout = html.Div([
                     ]
                 )
             ],style={"height": "100%", "background-color": "#2c3f53", 'border-style': 'solid', 'border-width': '1px', 'border-color': '#445462'}), 
-        ],width={"size": 6},style={"height": '650px', "padding": "5px"}),
+        ],width={"size": 6}, xs=12, md=6, style={"height": '650px', "padding": "5px"}),
 
         dbc.Col([
 
@@ -398,7 +401,7 @@ app.layout = html.Div([
                 ],style={"maxHeight": "100%", "background-color": "#2c3f53", 'border-style': 'solid', 'border-width': '1px', 'border-color': '#445462'}), 
             ],style={"height": "34%", "padding": 5}),
 
-        ],width={"size": 3}, style={"height": '650px'}),
+        ],width={"size": 3}, xs=12, md=3, style={"height": '650px'}),
 
     ]),
 
