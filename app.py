@@ -202,7 +202,7 @@ app.layout = html.Div([
                                     children="The exemplary information is retrieved from diplomatic cables originally published on WikiLeaks using Natural Language Processing.",
                                     style={'margin-top': 0, 'text-align': 'justify', 'word-spacing': '-2px', 'margin-bottom': 0}),
                                 html.P(
-                                    children="The Graph displays the level of like-mindedness between the Member States using the number of Member States supported each other’s statements as an indicator.",
+                                    children="The Graph displays the level of like-mindedness between the Member States using the number times Member States supported each other’s statements in formal Council meetings as an indicator.",
                                     style={'margin-top': 0, 'text-align': 'justify', 'word-spacing': '-2px'})
                             ], style={"overflow": "scroll", 'padding': 5, 'height': '90%'})
                         ], style={"background-color": "#2c3f53", 'border-style': 'solid', 'border-width': '1px', 'border-color': '#445462', 'height': '100%', 'padding': 5})
