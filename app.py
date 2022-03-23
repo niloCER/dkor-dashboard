@@ -36,7 +36,7 @@ ms.sort()
 ms_dict = {'BEL': 'Belgium','BGR': 'Bulgaria','DNK': 'Denmark','DEU': 'Germany','EST': 'Estonia','FIN': 'Finland','FRA': 'France','GBR': 'Great Britain','GRC': 'Greece','IRL': 'Ireland','ITA': 'Italy','HRV': 'Croatia','LAT': 'Latvia','LTU': 'Lithuania','LUX': 'Luxembourg','MLT': 'Malta','NLD': 'The Netherlands','AUT': 'Austria','POL': 'Poland','PRT': 'Portugal','ROU': 'Romania','SWE': 'Sweden','SVK': 'Slovakia','SVN': 'Slovenia','ESP': 'Spain','CZE': 'Czech Republic','HUN': 'Hungary','CYP': 'Cyprus'}
 
 # dkor paths
-directory_name = "./DKOR/DKORs_clean"
+directory_name = "./DKORs_clean"
 directory = os.fsencode(directory_name)
 dkor_list = []
     
@@ -154,12 +154,17 @@ def build_graph(directory_name,dkor_list):
 # Dash App Layout
 #######################################
 
+external_stylesheets=[dbc.themes.SUPERHERO]
+
 app = dash.Dash(
-    external_stylesheets=[dbc.themes.SUPERHERO],
+    __name__,
+    external_stylesheets=external_stylesheets,
     meta_tags=[
         {"name": "viewport", "content": "width=device-width, initial-scale=1"},
     ],
 )
+
+server = app.server
 
 app.layout = html.Div([
 
@@ -615,5 +620,6 @@ def refresh(n, elements, graph_tapNode, dominating_set_n, spanning_tree_button_n
 # Dash App Run
 #######################################
 
-if __name__ == '__main__':
-    app.run_server(debug=False)
+#if __name__ == '__main__':
+#    app.run_server(debug=False)
+#
