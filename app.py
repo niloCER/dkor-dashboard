@@ -342,7 +342,7 @@ app.layout = html.Div([
                                         style={'margin-top': 10 , 'margin-bottom': 10}
                                 )
 
-                            ], xs=12, sm=6, md=6, lg=12, style={'padding' : 0}, align='stretch'),
+                            ], xs=12, sm=6, md=6, lg=12, style={'padding' : 5}, align='stretch'),
 
                             dbc.Col([
                                 # Table
@@ -360,7 +360,7 @@ app.layout = html.Div([
                                         hover=True)
                                 ], id='like_minded_table_container', style={"overflow": "scroll", 'margin': 10, 'font-size': '15px'}, className='mobile_table')
 
-                            ], xs=12, sm=6, md=6, lg=12, style={'padding' : 0, 'padding-top': 6}, align='stretch')
+                            ], xs=12, sm=6, md=6, lg=12, style={'padding' : 5, 'padding-top': 6}, align='stretch')
 
                         ], style={'margin':0, "background-color": "#2c3f53", 'border-style': 'solid', 'border-width': '1px', 'border-color': '#445462', 'height': '100%', 'padding': 5})
                     ], xs=12 , sm=12 , md=8 , lg=12, style={'padding': 5}),
