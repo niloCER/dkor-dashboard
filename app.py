@@ -205,7 +205,7 @@ app.layout = html.Div([
                                 html.P(
                                     children="The Graph displays the level of like-mindedness between the Member States using the number times Member States supported each other’s statements in formal Council meetings as an indicator.",
                                     style={'margin-top': 0, 'text-align': 'justify', 'word-spacing': '-2px'})
-                            ], style={"overflow": "scroll", 'padding': 5, 'height': '90%'})
+                            ], style={"overflow-y": "auto", 'padding': 5, 'height': '90%'})
                         ], style={"background-color": "#2c3f53", 'border-style': 'solid', 'border-width': '1px', 'border-color': '#445462', 'height': '100%', 'padding': 5})
 
                     ], xs=12 , sm=6 , md=6 , lg=12, style={'padding': 5}, class_name='media_height_inner_col'),
@@ -215,7 +215,7 @@ app.layout = html.Div([
                         # Select dkors
                             html.H5(
                             children='Diplomatic Correspondance',
-                            style={'padding-bottom': 5, 'white-space': 'nowrap', 'overflow': 'scroll'}
+                            style={'padding-bottom': 5, 'white-space': 'nowrap', 'overflow': 'hidden'}
                             ),
 
                             html.Div([
@@ -227,7 +227,7 @@ app.layout = html.Div([
                                     style={'display': 'inline-block', 'margin-left': 10},
                                     inputStyle={"margin-right": 5}
                                 ),
-                            ],style={"overflow": "scroll", 'height': '70%'}),
+                            ],style={"overflow-y": "auto", 'height': '70%'}),
 
                             dbc.Button(
                                     "Build Graph", 
@@ -299,7 +299,7 @@ app.layout = html.Div([
                                 html.H5(
                                 children="Select Member State from Graph", # replace with ms-name - Details when selected
                                 id='details',
-                                style={'white-space': 'nowrap', 'overflow': 'scroll'},
+                                style={'white-space': 'nowrap', 'overflow': 'hidden'},
                                 )
                             ], xs=12, sm=12, md=12, lg=12, style={'padding' : 0}, align='stretch'),
 
@@ -349,7 +349,7 @@ app.layout = html.Div([
                                 html.Div([
                                     html.H6(
                                         children="Most like-minded Member States",
-                                        style={'white-space': 'nowrap', 'overflow': 'scroll'})
+                                        style={'white-space': 'nowrap', 'overflow': 'hidden'})
                                 ]),
 
                                 html.Div([
@@ -358,7 +358,7 @@ app.layout = html.Div([
                                         striped=True, 
                                         bordered=True,
                                         hover=True)
-                                ], id='like_minded_table_container', style={"overflow": "scroll", 'margin': 10, 'font-size': '15px'}, className='mobile_table')
+                                ], id='like_minded_table_container', style={"overflow-x": "auto", 'margin': 10, 'font-size': '15px'}, className='mobile_table')
 
                             ], xs=12, sm=6, md=6, lg=12, style={'padding' : 5, 'padding-top': 6}, align='stretch')
 
@@ -372,7 +372,7 @@ app.layout = html.Div([
 
                             html.Div([
                                 html.P(
-                                    children= str("Total Number of Connections: " + str(round(nx_graph.number_of_edges(),2))), # replace with ms-name - Details when selected
+                                    children= str("Total Connections: " + str(round(nx_graph.number_of_edges(),2))), # replace with ms-name - Details when selected
                                     id='total_edges'),
 
                                 html.P(
@@ -503,7 +503,7 @@ def refresh(n, elements, graph_tapNode, dominating_set_n, spanning_tree_button_n
     return_eigenvektor_centrality_label = "Eigenvektor Centrality:"
     return_table = dbc.Table.from_dataframe(like_minded_table, striped=True, bordered=True,hover=True)
     return_intermediary_secondary_label = "Strongest intermediary:"
-    return_total_edges = "Total Number of Connections: " + str(round(nx_graph.number_of_edges(),2))
+    return_total_edges = "Total Connections: " + str(round(nx_graph.number_of_edges(),2))
     return_average_connectivity = "Average Connectivity: " + str(round(connectivity.average_node_connectivity(nx_graph),2))
     return_assortativity = "Assortativity: " + str(round(assortativity.degree_assortativity_coefficient(nx_graph),2))
     return_global_efficiency = "Global Efficiency: " + str(round(efficiency.global_efficiency(nx_graph),2))
