@@ -317,7 +317,7 @@ app.layout = html.Div([
                                     html.P(
                                         children="Eigenvektor Centrality:", # replace with ms-name - Details when selected
                                         id='eigenvektor_centrality')
-                                ], style={'padding': 5}),
+                                ], style={'padding': 5, 'padding-top': 0}),
 
                                 html.P(
                                     children="Strongest intermediary:", # replace with ms-name - Details when selected
