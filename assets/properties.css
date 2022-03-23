@@ -17,19 +17,37 @@ body{
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
+
+.row::-webkit-scrollbar {
+    display: none;
+  }
 
 .col{
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
+
+.col::-webkit-scrollbar {
+    display: none;
+  }
 
 .div{
     height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
 }
+
+.div::-webkit-scrollbar {
+    display: none;
+  }
 
 P{
     margin: 0;
