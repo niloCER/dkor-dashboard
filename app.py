@@ -526,7 +526,7 @@ def refresh(n, elements, graph_tapNode, dominating_set_n, spanning_tree_button_n
         for e in elements:
             for edge in spanning_tree:
                 if e['data']['id'] == edge[0] or e['data']['id'] == edge[1]:
-                        e['classes'] = 'node_highlight'
+                        e['classes'] = 'node_not_selected'
                 if e['data']['id'] == str(edge[0] + "_" + edge[1]) or e['data']['id'] == str(edge[1] + "_" + edge[0]):
                     e['classes'] = 'edge_highlight'
 
