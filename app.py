@@ -358,7 +358,7 @@ app.layout = html.Div([
                                         striped=True, 
                                         bordered=True,
                                         hover=True)
-                                ], id='like_minded_table_container', style={"overflow-x": "auto", 'margin': 10, 'font-size': '15px'}, className='mobile_table')
+                                ], id='like_minded_table_container', style={"overflow-x": "auto", 'margin': 5, 'font-size': '15px'}, className='mobile_table')
 
                             ], xs=12, sm=6, md=6, lg=12, style={'padding' : 5, 'padding-top': 6}, align='stretch')
 
