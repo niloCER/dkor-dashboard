@@ -1,8 +1,73 @@
 body{
     font-size: 15px;
+    display: flex;
+    flex-direction: column;
 }
 
 .dropdown-menu {
     max-height: 200px;
     overflow-y: auto;
+}
+
+.wrapper{
+     flex:1;
+   }
+
+.row{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.col{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.div{
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+P{
+    margin: 0;
+    padding: 0;
+}
+
+.media_height{
+    height: 650px;
+}
+
+.media_height_inner_col{
+    height: 325px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.media_height_analysis{
+    height: 650px;
+}
+
+.mobile_table{
+    max-height: 150px;
+}
+
+@media only screen and (max-width: 991px){
+    .media_height_inner_col{
+        height: auto;
+    }
+
+    .media_height{
+        height: auto;
+    }
+
+    .media_height_analysis{
+        height: auto;
+    }
+
+    .mobile_table{
+        max-height: 250;
+    }
 }
