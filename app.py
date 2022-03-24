@@ -209,6 +209,7 @@ app.layout = html.Div([
                         ], style={"background-color": "#2c3f53", 'border-style': 'solid', 'border-width': '1px', 'border-color': '#445462', 'height': '100%', 'padding': 5})
 
                     ], xs=12 , sm=6 , md=6 , lg=12, style={'padding': 5}, class_name='media_height_inner_col'),
+
                     dbc.Col([
 
                         html.Div([
@@ -240,7 +241,7 @@ app.layout = html.Div([
 
                     ], xs=12 , sm=6 , md=6 , lg=12, style={'padding': 5}, class_name='media_height_inner_col')
                 ])
-            ], xs={"size": 10, "offset": 1}, sm={"size": 10, "offset": 1}, md={"size": 10, "offset": 1}, lg={"size": 3,  "offset": 0}, class_name='media_height'),
+            ], xs=12, sm=12 , md=12, lg=3, class_name='media_height'),
 
             dbc.Col([
                 # Graph
@@ -288,7 +289,7 @@ app.layout = html.Div([
                         }
                     ])
 
-            ], xs={"size": 10, "offset": 1}, sm={"size": 10, "offset": 1}, md={"size": 10, "offset": 1}, lg={"size": 6,  "offset": 0}, style={'height': '650px', 'padding': 5}),
+            ], xs=12, sm=12, md=12, lg=6, style={'padding': 5}, class_name='media_graph'),
 
             dbc.Col([
                 dbc.Row([
@@ -400,7 +401,7 @@ app.layout = html.Div([
 
                     ], xs=12 , sm=12 , md=4 , lg=12, style={'padding': 5})
                 ], style={'margin':0})
-            ], xs={"size": 10, "offset": 1}, sm={"size": 10, "offset": 1}, md={"size": 10, "offset": 1}, lg={"size": 3,  "offset": 0}, style={'padding': 0}, class_name='media_height_analysis'),
+            ], xs=12, sm=12, md=12, lg=3, style={'padding': 0}, class_name='media_height_analysis'),
         ]),
 
         dbc.Row([

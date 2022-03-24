@@ -46,6 +46,10 @@ P{
     max-height: 150px;
 }
 
+.media_graph{
+    height: 650px;
+}
+
 @media only screen and (max-width: 991px){
     .media_height_inner_col{
         height: auto;
@@ -61,5 +65,9 @@ P{
 
     .mobile_table{
         max-height: 250;
+    }
+
+    .media_graph{
+        height: 500px;
     }
 }
