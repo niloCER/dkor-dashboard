@@ -622,6 +622,5 @@ def refresh(n, elements, graph_tapNode, dominating_set_n, spanning_tree_button_n
 # Dash App Run
 #######################################
 
-#if __name__ == '__main__':
-#    app.run_server(debug=False)
-#
+if __name__ == '__main__':
+    app.run_server(debug=False)
