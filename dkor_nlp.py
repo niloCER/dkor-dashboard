@@ -74,6 +74,10 @@ def dkor_nlp(dkor_path):
     matcher_unterstuetzen = DependencyMatcher(nlp.vocab)
     matcher_unterstuetzt_von_Verb_ROOT = DependencyMatcher(nlp.vocab)
     matcher_unterstuetzt_von_MS_ROOT = DependencyMatcher(nlp.vocab)
+    matcher_unterstuetzt_von_modal = DependencyMatcher(nlp.vocab)
+    matcher_votierte_fuer = DependencyMatcher(nlp.vocab)
+    matcher_wurde_unterstuetzt = DependencyMatcher(nlp.vocab)
+    matcher_wurde_unterstuetzt_nebensatz = DependencyMatcher(nlp.vocab)
 
     pattern_dep = [
         {
@@ -164,12 +168,141 @@ def dkor_nlp(dkor_path):
         }
     ]
 
+    pattern_unterstuetzt_von_modal = [
+        {
+            "RIGHT_ID": "anchor_unterstuetzt_von_modal",                                                          
+            "RIGHT_ATTRS": {"LEMMA": {"REGEX": "unterstützen"}, "_": {"IS_MS": False}, "POS": "VERB"}  
+        },
+        {
+            "LEFT_ID": "anchor_unterstuetzt_von_modal",
+            "REL_OP": ">>",
+            "RIGHT_ID": "sb",
+            "RIGHT_ATTRS": {"_": {"IS_MS": True}, "DEP": "sb"}
+        },
+        {
+            "LEFT_ID": "sb",
+            "REL_OP": "$++",
+            "RIGHT_ID": "von",
+            "RIGHT_ATTRS": {"_": {"IS_MS": False}, "DEP": "sbp", "ORTH": "von"}
+        },
+        {
+            "LEFT_ID": "von",
+            "REL_OP": ">>",
+            "RIGHT_ID": "nk",
+            "RIGHT_ATTRS": {"_": {"IS_MS": True}, "DEP": "nk"}
+        }
+    ]
+
+    pattern_votierte_fuer = [
+        {
+            "RIGHT_ID": "anchor_votierte",                                                          
+            "RIGHT_ATTRS": {"LEMMA": {"REGEX": "votierte|votiert"}, "_": {"IS_MS": False}, "POS": "VERB"}  
+        },
+        {
+            "LEFT_ID": "anchor_votierte",
+            "REL_OP": ">>",
+            "RIGHT_ID": "sb",
+            "RIGHT_ATTRS": {"_": {"IS_MS": True}, "DEP": "sb"}
+        },
+        {
+            "LEFT_ID": "sb",
+            "REL_OP": "$++",
+            "RIGHT_ID": "fuer",
+            "RIGHT_ATTRS": {"_": {"IS_MS": False}, "DEP": "mo", "ORTH": "für"}
+        },
+        {
+            "LEFT_ID": "fuer",
+            "REL_OP": ">>",
+            "RIGHT_ID": "nk",
+            "RIGHT_ATTRS": {"_": {"IS_MS": True}, "DEP": "nk"}
+        }
+    ]
+
+    pattern_wurde_unterstuetzt = [
+        {
+            "RIGHT_ID": "wurde",                                                          
+            "RIGHT_ATTRS": {"LEMMA": "werden", "_": {"IS_MS": False}, "POS": "AUX"}  
+        },
+        {
+            "LEFT_ID": "wurde",
+            "REL_OP": ">>",
+            "RIGHT_ID": "sb",
+            "RIGHT_ATTRS": {"_": {"IS_MS": True}, "DEP": "sb"}
+        },
+        {
+            "LEFT_ID": "sb",
+            "REL_OP": "$++",
+            "RIGHT_ID": "unterstuetzt",
+            "RIGHT_ATTRS": {"LEMMA": "unterstützen", "_": {"IS_MS": False}, "POS": "VERB"}
+        },
+        {
+            "LEFT_ID": "unterstuetzt",
+            "REL_OP": ">>",
+            "RIGHT_ID": "von",
+            "RIGHT_ATTRS": {"_": {"IS_MS": False}, "DEP": "sbp", "ORTH": "von"}
+        },
+        {
+            "LEFT_ID": "von",
+            "REL_OP": ">>",
+            "RIGHT_ID": "nk",
+            "RIGHT_ATTRS": {"_": {"IS_MS": True}, "DEP": "nk"}
+        }
+
+    ]
+
+    pattern_wurde_unterstuetzt_nebensatz = [
+         {
+            "RIGHT_ID": "anchor_verb",                        
+            "RIGHT_ATTRS": {"_": {"IS_MS": False}, "DEP": "ROOT", "POS": "VERB"}    
+        },
+        {
+            "LEFT_ID": "anchor_verb",
+            "REL_OP": ">>",
+            "RIGHT_ID": "sb",
+            "RIGHT_ATTRS": {"_": {"IS_MS": True}, "DEP": "sb",}
+        },
+        {
+            "LEFT_ID": "anchor_verb",
+            "REL_OP": ">>",
+            "RIGHT_ID": "und",                                                        
+            "RIGHT_ATTRS": {"_": {"IS_MS": False}, "DEP": "cd", "ORTH": "und"}   
+        },
+        {
+            "LEFT_ID": "und",
+            "REL_OP": ">>",
+            "RIGHT_ID": "wurde",
+            "RIGHT_ATTRS": {"LEMMA": "werden", "_": {"IS_MS": False}, "POS": "AUX"}
+        },
+        {
+            "LEFT_ID": "wurde",
+            "REL_OP": ">>",
+            "RIGHT_ID": "unterstuetzt",
+            "RIGHT_ATTRS": {"LEMMA": "unterstützen", "_": {"IS_MS": False}, "POS": "VERB", "DEP": "oc"}
+        },
+        {
+            "LEFT_ID": "unterstuetzt",
+            "REL_OP": ">>",
+            "RIGHT_ID": "von",
+            "RIGHT_ATTRS": {"_": {"IS_MS": False}, "DEP": "sbp", "ORTH": "von"}
+        },
+        {
+            "LEFT_ID": "von",
+            "REL_OP": ">>",
+            "RIGHT_ID": "nk",
+            "RIGHT_ATTRS": {"_": {"IS_MS": True}, "DEP": "nk"}
+        }
+
+    ]
+
     #matcher.add("MS", [pattern_ms])
     matcher_dep.add("DEP", [pattern_dep])
     matcher_unterstuetzen.add("UNT", [pattern_unterstuetzen])
     matcher_unterstuetzt_von_Verb_ROOT.add("UNT_VON", [pattern_unterstuetzt_von_Verb_ROOT])
     matcher_unterstuetzt_von_MS_ROOT.add("UNT_VON", [pattern_unterstuetzt_von_MS_ROOT])
-
+    matcher_unterstuetzt_von_modal.add("UNT_VON", [pattern_unterstuetzt_von_modal])
+    matcher_votierte_fuer.add("DEP", [pattern_votierte_fuer])
+    matcher_wurde_unterstuetzt.add("DEP", [pattern_wurde_unterstuetzt])
+    matcher_wurde_unterstuetzt_nebensatz.add("DEP", [pattern_wurde_unterstuetzt_nebensatz])
 
     # NLP processing
     doc = nlp(dkor)
@@ -182,6 +315,10 @@ def dkor_nlp(dkor_path):
     matches_unterstuetzen = matcher_unterstuetzen(doc)
     matches_unterstuetzt_von_Verb_ROOT = matcher_unterstuetzt_von_Verb_ROOT(doc)
     matches_unterstuetzt_von_MS_ROOT = matcher_unterstuetzt_von_MS_ROOT(doc)
+    matches_unterstuetzt_von_modal = matcher_unterstuetzt_von_modal(doc)
+    matches_votierte_fuer = matcher_votierte_fuer(doc)
+    matches_wurde_unterstuetzt = matcher_wurde_unterstuetzt(doc)
+    matches_wurde_unterstuetzt_nebensatz = matcher_wurde_unterstuetzt_nebensatz(doc)
 
     #for m in matches_unterstuetzt_von_MS_ROOT:
     #    match_id, token_ids = m
@@ -269,6 +406,78 @@ def dkor_nlp(dkor_path):
 
     ispecial_cases_list = removeSublist(special_cases_list)
     special_cases_list.sort()
+
+    # 4. unterstützt von (modal)
+    special_case = []
+    curr_token = -1
+
+    for m in matches_unterstuetzt_von_modal:
+        match_id, token_ids = m
+        if token_ids[1]!=curr_token: 
+            if curr_token > 0 :
+                special_cases_list.append(special_case)
+                special_case = []
+            special_case.append(token_ids[1])
+            curr_token = token_ids[1]
+        special_case.append(token_ids[3])
+    special_cases_list.append(special_case)
+
+    special_cases_list = removeSublist(special_cases_list)
+    special_cases_list.sort()
+
+    # 5. votierte fuer
+    special_case = []
+    curr_token = -1
+
+    for m in matches_votierte_fuer:
+        match_id, token_ids = m
+        if token_ids[1]!=curr_token: 
+            if curr_token > 0 :
+                special_cases_list.append(special_case)
+                special_case = []
+            special_case.append(token_ids[1])
+            curr_token = token_ids[1]
+        special_case.append(token_ids[3])
+    special_cases_list.append(special_case)
+
+    special_cases_list = removeSublist(special_cases_list)
+    special_cases_list.sort()
+
+    # 6. wurde unterstuetzt
+    special_case = []
+    curr_token = -1
+
+    for m in matches_wurde_unterstuetzt:
+        match_id, token_ids = m
+        if token_ids[1]!=curr_token: 
+            if curr_token > 0 :
+                special_cases_list.append(special_case)
+                special_case = []
+            special_case.append(token_ids[1])
+            curr_token = token_ids[1]
+        special_case.append(token_ids[4])
+    special_cases_list.append(special_case)
+
+    special_cases_list = removeSublist(special_cases_list)
+    special_cases_list.sort()
+
+    # 7. wurde unterstuetzt nebensatz
+    special_case = []
+    curr_token = -1
+
+    for m in matches_wurde_unterstuetzt_nebensatz:
+        match_id, token_ids = m
+        if token_ids[1]!=curr_token: 
+            if curr_token > 0 :
+                special_cases_list.append(special_case)
+                special_case = []
+            special_case.append(token_ids[1])
+            curr_token = token_ids[1]
+        special_case.append(token_ids[6])
+    special_cases_list.append(special_case)
+
+    special_cases_list = removeSublist(special_cases_list)
+    special_cases_list.sort()    
 
     # print special case
     #for i in special_cases_list:
