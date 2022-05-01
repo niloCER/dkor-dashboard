@@ -13,6 +13,7 @@ import dkor_nlp
 dkor_dict = {
     '20130716_JI ReferentInnen EU US Gruppe.txt': [['FRA', 'DEU', 'ESP', 'POL', 'SWE', 'BEL', 'NLD'], ['EST', 'AUT', 'SVN'], ['CZE', 'GBR']],
     '20130724_AStV 2 EU US Gruppe.txt': [['LUX', 'DEU', 'ITA']],
+    '20130626_AStV 2 EU US Gruppe.txt': [],
     '20130625_TAG CORTA EU US Datenschutzabkommen.txt': [['DEU', 'GBR', 'SWE'], ['DEU', 'GBR', 'SWE'], ['DEU', 'FRA'], ['DEU', 'NLD', 'FRA', 'GBR'], ['NLD', 'FRA']],
     '20130624_JI ReferentInnen EU US Gruppe.txt': [['FRA', 'ESP', 'GBR', 'LUX'], ['FRA', 'GBR'], ['FRA', 'ESP', 'GBR', 'LUX'], ['FRA', 'GBR']],
     '20130715_JI ReferentInnen EU US Gruppe.txt': [['EST', 'POL', 'SVN'], ['ESP', 'DEU', 'FRA', 'SWE', 'BEL']],
