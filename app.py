@@ -174,12 +174,12 @@ app.layout = html.Div([
         dbc.Row([
             # Header
             html.H1(
-            children='DKOR Dashboard',
+            children='DKOR Dashboard - From Reports to Data',
             style={'padding-left': 10, 'padding-top': 15, 'margin-left': 0, 'margin-bottom': 0}
             ),
 
             html.H6(
-                children='Master Thesis: How can diplomatic cables be used to map negotiation dynamics in the European Council?',
+                children='How can diplomatic cables be used to map the level of like-mindedness between member states in formal negotiations in the Council of the European Union?',
                 style={'padding-left': 13, 'margin-top': 0, 'margin-left': 0, 'padding-bottom': 10, 'font-size': '18px'}
             )
 
@@ -197,14 +197,11 @@ app.layout = html.Div([
 
                             html.Div([
                                 html.P(
-                                    children="This project demonstrates how German diplomatic cables from the European Council can be used to gain deeper insights into negotiation dynamics.",
+                                    children="The Council of the EU is one the major decision making bodies in the EU. Delegates present and defend their member state’s position during the meetings and report protocols of the meetings back to their home capitals in form of diplomatic cables. Thus, member states possess large amounts of records of EU negotiations in their archives. This thesis explores how those files could potentially be turned into data using Natural Language Processing (NLP) and network analysis.",
                                     style={'text-align': 'justify', 'word-spacing': '-2px', 'margin-bottom': 0}),
                                 html.P(
-                                    children="The exemplary information is retrieved from diplomatic cables originally published on WikiLeaks using Natural Language Processing.",
-                                    style={'margin-top': 0, 'text-align': 'justify', 'word-spacing': '-2px', 'margin-bottom': 0}),
-                                html.P(
-                                    children="The Graph displays the level of like-mindedness between the Member States using the number times Member States supported each other’s statements in formal Council meetings as an indicator.",
-                                    style={'margin-top': 0, 'text-align': 'justify', 'word-spacing': '-2px'})
+                                    children="The research is based on a case study on nine German diplomatic cables (German Drahtbericht/Diplomatische Korrespondez, abb. dkor) written in 2013 and published on WikiLeaks as part of the German BND-NSA Inquiry Exhibits. With the help of NLP, supporting sets of member states, i.e. member states that shared the same position in a statement, are extracted from the files. Based on the assumption that the more often two member states are mentioned together in supporting sets, the more like-minded they are, a network graph is constructed representing the level like-mindedness between the member states. ",
+                                    style={'margin-top': 0, 'text-align': 'justify', 'word-spacing': '-2px', 'margin-bottom': 0})
                             ], style={"overflow-y": "auto", 'padding': 5, 'height': '90%'})
                         ], style={"background-color": "#2c3f53", 'border-style': 'solid', 'border-width': '1px', 'border-color': '#445462', 'height': '100%', 'padding': 5})
 
@@ -215,7 +212,7 @@ app.layout = html.Div([
                         html.Div([
                         # Select dkors
                             html.H5(
-                            children='Diplomatic Correspondance',
+                            children='Diplomatic Cables',
                             style={'padding-bottom': 5, 'white-space': 'nowrap', 'overflow': 'hidden'}
                             ),
 
