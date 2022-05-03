@@ -82,7 +82,7 @@ def dkor_nlp(dkor_path):
     pattern_dep = [
         {
             "RIGHT_ID": "anchor_ms",                                                            # unique name
-            "RIGHT_ATTRS": {"_": {"IS_MS": True}, "DEP": {"REGEX": "sb|nk|oa|par|app|ROOT"}}    # token pattern for "ms"
+            "RIGHT_ATTRS": {"_": {"IS_MS": True}, "DEP": {"REGEX": "sb|nk|oa|par|app|ROOT|cj"}}    # token pattern for "ms"
         },
         {
             "LEFT_ID": "anchor_ms",
